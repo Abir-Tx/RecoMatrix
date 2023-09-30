@@ -114,7 +114,8 @@ class Detector:
 
         bboxImage = self.createBoundingBox(image, threshold, imagePath)
 
-        cv2.imwrite(self.modelName + ".jpg", bboxImage)
+        # Save the first image from the video
+        # cv2.imwrite(self.modelName + ".jpg", bboxImage)
         cv2.imshow("Result", bboxImage)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
