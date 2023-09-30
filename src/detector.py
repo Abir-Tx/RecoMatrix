@@ -49,7 +49,7 @@ class Detector:
 
         print("Model " + self.modelName + "loaded successfully...")
 
-    def createBoundingBox(self, image, threshold=0.5, imagePath="../output/image.jpg"):
+    def createBoundingBox(self, image, threshold=0.5):
         inputTensor = cv2.cvtColor(image.copy(), cv2.COLOR_BGR2RGB)
         inputTensor = tf.convert_to_tensor(inputTensor, dtype=tf.uint8)
         inputTensor = inputTensor[tf.newaxis, ...]
@@ -104,18 +104,19 @@ class Detector:
                         classColor,
                         2,
                     )
-        file_name = imagePath.split("/")[-1]
-        imageName = file_name.split(".")[0]
-        cv2.imwrite("../output/" + imageName + "_detected.jpg", image)
         return image
 
     def predictImage(self, imagePath, threshold=0.5):
         image = cv2.imread(imagePath)
 
-        bboxImage = self.createBoundingBox(image, threshold, imagePath)
+        bboxImage = self.createBoundingBox(image, threshold)
 
-        # Save the first image from the video
-        # cv2.imwrite(self.modelName + ".jpg", bboxImage)
+        # Saving the detected image
+        file_name = imagePath.split("/")[-1]
+        imageName = file_name.split(".")[0]
+        cv2.imwrite("../output/" + imageName + "_detected.jpg", bboxImage)
+
+        # Show the detected image
         cv2.imshow("Result", bboxImage)
         cv2.waitKey(0)
         cv2.destroyAllWindows()

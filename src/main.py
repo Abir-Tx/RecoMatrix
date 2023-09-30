@@ -5,7 +5,7 @@ from detector import *
 modelURL = "http://download.tensorflow.org/models/object_detection/tf2/20200711/faster_rcnn_resnet50_v1_640x640_coco17_tpu-8.tar.gz"
 
 classFile = "coco.names"
-imagePath = "../test/race.jpg"
+imagePath = "../test/cycle.jpg"
 videoPath = "../test/street.mp4"  # 0 for wbcam
 threshold = 0.5
 
