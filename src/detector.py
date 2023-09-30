@@ -121,6 +121,43 @@ class Detector:
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
+    def predictImagesInFolder(self, folderPath, threshold=0.5, show=False):
+        # Create the output folder if it doesn't exist
+        output_folder = "../output/"
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+
+        # Loop through all files in the specified folder
+        for filename in os.listdir(folderPath):
+            if filename.endswith(".jpg") or filename.endswith(
+                ".png"
+            ):  # You can add more image extensions if needed
+                imagePath = os.path.join(folderPath, filename)
+
+                # Perform the image prediction for each image in the folder
+                image = cv2.imread(imagePath)
+                bboxImage = self.createBoundingBox(image, threshold)
+
+                # Saving the detected image
+                imageName = os.path.splitext(filename)[0]
+                output_path = os.path.join(output_folder, imageName + "_detected.jpg")
+                cv2.imwrite(output_path, bboxImage)
+
+                # Show the detected image if specified
+                if show:
+                    cv2.imshow("Result", bboxImage)
+                    cv2.waitKey(0)
+                    cv2.destroyAllWindows()
+                    print("Info: All the detected images has been saved\n")
+                else:
+                    print(
+                        "\033[91m Info: \033[0m Detected image named \033[92m"
+                        + imageName
+                        + "\033[0m  has been saved in \033[92m"
+                        + output_folder
+                        + "\033[0m"
+                    )
+
     def predictVideo(self, videoPath, threshold=0.5):
         cap = cv2.VideoCapture(videoPath)
 
