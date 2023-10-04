@@ -14,11 +14,11 @@ args = parser.parse_args()
 if args.camera:
     videoPath = 0
 else:
-    videoPath = "../test/street.mp4"
+    videoPath = "../test/videos/two_people_walking_in_street.mp4"
 
 classFile = "coco.names"
-imagePath = "../test/cats.jpg"
-folderPath = "../test/"
+imagePath = "../test/images/cats.jpg"
+folderPath = "../test/images"
 threshold = 0.5
 
 detector = Detector()
@@ -26,6 +26,6 @@ detector.readClasses(classFile)
 detector.downloadModel(modelURL)
 detector.loadModel()
 detector.predictImagesInFolder(folderPath, threshold)
-detector.predictImage(imagePath, threshold)
+# detector.predictImage(imagePath, threshold)
 
 detector.predictVideo(videoPath, threshold)
