@@ -27,3 +27,7 @@ AI Enigma Contest task on real time object detection and tracking
 
 - [COCO Dataset](https://cocodataset.org/#home)
 - [TF Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)
+
+# Authors
+
+<a href="https://github.com/karit7"><img src="https://avatars.githubusercontent.com/u/120469589?v=4" width="50" height="50" title="Md. Tanzib Hosain" /></a> <a href="https://github.com/abir-tx"><img src="https://avatars.githubusercontent.com/u/28858998?v=4" width="50" height="50" title="Mushfiqur Rahman Abir"/></a>
