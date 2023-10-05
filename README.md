@@ -66,6 +66,23 @@ conda env create -f env.yml
 
 ### Manual
 
+Every packages can be installed manually. The advantage of installing manually is that we get more control and it gets easier to solve errors and also find errors.
+
+- Create the virtual environment first
+
+```bash
+conda env create --name tf_gpu python 3.9
+conda activate tf_gpu
+```
+
+- Install the libraries
+
+```bash
+conda install cudatoolkit=11.2 cudnn=8.1 -c=conda-forge
+pip install tensorflow-gpu==2.6
+pip install opencv-python
+```
+
 ## References
 
 - [COCO Dataset](https://cocodataset.org/#home)
