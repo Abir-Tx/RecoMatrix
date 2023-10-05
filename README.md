@@ -83,6 +83,42 @@ pip install tensorflow-gpu==2.6
 pip install opencv-python
 ```
 
+## Running the project
+
+We have made running the project much easier
+
+- Activate the conda virtual environment first
+
+```bash
+conda activate tf_gpu
+```
+
+- Go to the `src` directory
+
+```bash
+cd src
+```
+
+- Run the `main` file
+
+```bash
+python main.py
+```
+
+### Command Line Arguments
+
+We have added some _CLA_ to out project so that we don't need to change in code when we want to run in different modes of our project. For example, currently we have a `--camera` argument which will activate the live detection using the webcam
+
+```bash
+python main.py --camera
+```
+
+Currently supported CLA are:
+
+```bash
+--camera    Enable the live detection using camera
+```
+
 ## References
 
 - [COCO Dataset](https://cocodataset.org/#home)
