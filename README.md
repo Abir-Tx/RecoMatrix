@@ -44,7 +44,7 @@ complexObjectDetection
 
 The project environment is managed by [ conda ](https://docs.conda.io/projects/miniconda/en/latest/). Details are given below:
 
-- OS Platform: Linux 6.5.5-arch1-1
+- OS Platform: `Linux 6.5.5-arch1-1`
 - Python Version: `Python 3.9.0`
 - PIP Version: `pip 23.2.1`
 - Conda Version: `conda 23.7.4`
