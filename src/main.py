@@ -14,10 +14,10 @@ args = parser.parse_args()
 if args.camera:
     videoPath = 0
 else:
-    videoPath = "../test/videos/two_people_walking_in_street.mp4"
+    videoPath = "../test/videos/overlapping_street_view.mp4"
 
 classFile = "coco.names"
-imagePath = "../test/images/cats.jpg"
+imagePath = "../test/images/dog_with_a_person_detected.jpg"
 folderPath = "../test/images"
 threshold = 0.5
 
