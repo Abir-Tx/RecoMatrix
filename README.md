@@ -40,6 +40,32 @@ complexObjectDetection
 - **src**: Holds the `python` codes
 - **test**: It is used to store the existing and real time complex `image` and `videos` which are used by the `main.py` file for training the model.
 
+## Environment Setup
+
+The project environment is managed by [ conda ](https://docs.conda.io/projects/miniconda/en/latest/). Details are given below:
+
+- OS Platform: Linux 6.5.5-arch1-1
+- Python Version: `Python 3.9.0`
+- PIP Version: `pip 23.2.1`
+- Conda Version: `conda 23.7.4`
+- Tensorflow Version: `tensorflow-gpu 2.6.0`
+- Cuda Toolkit Version: `cudatoolkit 11.2.2`
+- CUDNN Version: `8.1`
+
+The above mentioned python packages version matching is an important part. It must be noticed that if the libraries versions are matching or not. There are two ways to make the developement environment ready:
+
+### Automatic - Using the YML file
+
+I have created an `env.yml` file using conda so that it becomes easier to install the developement libraries in one command. Use this command to install all the required libraries with specific versions.
+
+> Note that `conda` must be installed first
+
+```bash
+conda env create -f env.yml
+```
+
+### Manual
+
 ## References
 
 - [COCO Dataset](https://cocodataset.org/#home)
