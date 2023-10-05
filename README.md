@@ -116,6 +116,7 @@ python main.py --camera
 Currently supported CLA are:
 
 ```bash
+--help      Print the built in help menu for this program
 --camera    Enable the live detection using camera
 ```
 
