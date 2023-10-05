@@ -17,7 +17,7 @@ else:
     videoPath = "../test/videos/overlapping_street_view.mp4"
 
 classFile = "coco.names"
-imagePath = "../test/images/dog_with_a_person_detected.jpg"
+imagePath = "../test/images/dog_with_a_person.jpg"
 folderPath = "../test/images"
 threshold = 0.5
 
