@@ -8,9 +8,8 @@ AI Enigma Contest task on real time complex object detection
 <summary>Click to expand</summary>
 
 - [x] Faster R-CNN
-- [x] Mask R-CNN
-- [ ] Fast R-CNN
-- [ ] R-CNN
+- [x] R-FCN
+- [x] SSD
 
 </details>
 <br>
