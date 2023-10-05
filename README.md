@@ -119,6 +119,25 @@ Currently supported CLA are:
 --camera    Enable the live detection using camera
 ```
 
+## Performance Analysis
+
+### Meta Architecture (Accuracy and Speed)
+
+![Meta Architecture](https://github.com/Abir-Tx/AIEC_Object_Detection/assets/28858998/4da0e379-cad7-4cdc-ad37-e803aca66faa)
+
+### Meta Architecture (Object Resolution)
+
+![Meta Architecture (Object Resolution)](https://github.com/Abir-Tx/AIEC_Object_Detection/assets/28858998/0392e308-beec-4408-a181-da66063b8f52)
+
+### Meta Architecture (Feature Extractor)
+
+![Meta Architecture (Feature Extractor)](https://github.com/Abir-Tx/AIEC_Object_Detection/assets/28858998/b3464752-8613-473a-b84f-6f45af743242)
+
+### Architecture (Proposals Count)
+
+![Architecture (Proposals Count)](https://github.com/Abir-Tx/AIEC_Object_Detection/assets/28858998/6c300828-bc7e-4e6c-975e-ab04c306e384)
+
+
 ## References
 
 - [COCO Dataset](https://cocodataset.org/#home)
