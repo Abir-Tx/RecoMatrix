@@ -1,0 +1,9 @@
+site_name: RecoMatrix Documentation
+nav:
+  - Home: README.md
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - bash
+  navigation_depth: 10
