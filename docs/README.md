@@ -1,6 +1,9 @@
-# AIEC_Object_Detection
+# RecoMatrix
 
-AI Enigma Contest task on real time complex object detection
+![GitHub repo size](https://img.shields.io/github/repo-size/Abir-Tx/RecoMatrix)
+
+
+AI Enigma Contest task on real time complex object detection using computer vision and machine learning in python
 
 ## Algorithms planned to be implemented
 
