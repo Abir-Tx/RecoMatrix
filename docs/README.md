@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Abir-Tx/RecoMatrix)
 
 
-AI Enigma Contest task on real time complex object detection using computer vision and machine learning in python
+AI Enigma Contest task on real time complex object detection using computer vision and machine learning in python. The script detects most of the real world objects, human and pets in real time. 
 
 ## Algorithms planned to be implemented
 
